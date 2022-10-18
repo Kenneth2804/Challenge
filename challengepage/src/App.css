@@ -25,8 +25,8 @@ body {
   font-family:"Inter";
   font-size: 50px;
   color: white;
-  margin-left:10%;
-  margin-top: 2%;
+  margin-left:25%;
+  margin-top: 3%;
 }
 ul.main-menu {
   display: inline-flex;
@@ -64,18 +64,17 @@ li {
 }
 
 .header__middle {
+  align-items: center;
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px;
-gap: 382px;
-
-position: absolute;
-width: 1440px;
-height: 80px;
-left: 0px;
-top: 0px;
+  flex-direction: row;
+  gap: 588px;
+  height: 80px;
+  justify-content: center;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 1533px;
 
 }
 

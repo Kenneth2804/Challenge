@@ -176,7 +176,7 @@ const Navbar = ({script}) => {
             <img src={star} className="star5"></img>
             <p className="words">Tus palabra, no nuestra </p>
             <p className="after">After 15 years running The Yacht Week, people have a lot to say about us</p></div>
-
+<div>
   <div className='containerr'>
   <div className="card">
                      
@@ -203,7 +203,7 @@ const Navbar = ({script}) => {
       
     </div>
         </div>
-  
+        </div>
         </div>
         
 </div> 
