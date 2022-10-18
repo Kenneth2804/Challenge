@@ -69,7 +69,7 @@ const Navbar = ({script}) => {
                 <p>WKND</p>
          
            </div>
-        <div className="container">
+        <div className="containe">
             <div className="row">
 
                 {/* Add Logo  */}
@@ -118,19 +118,19 @@ const Navbar = ({script}) => {
         <div className='cuadrado'><a href="#"><img className='vector' src={imagen} alt='nop'/>
         </a><div className='ingresar'>Ingresar</div></div>
                 </ul>
+                    </nav>     
 <div>
     <p className='vacations'>Las mejores vacaciones de tu vida</p>
 </div>
 
                     
-                    </nav>     
+	    </div>
 
                 </div>   
 
         
         
             </div>
-	    </div>
 
     </header><br></br>
         <div className='part2' >      
