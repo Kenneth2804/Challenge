@@ -198,7 +198,7 @@ text-decoration: none;
    .main-nav .menubar__button {
   display: block!important;
   float: left;  
-  left: -90%;
+  left: -80%;
   background-color: black;
   color: #fff;
   padding: 6px 7px;
@@ -212,7 +212,7 @@ text-decoration: none;
 .main-nav ul.menuq2 {
   display: block!important;
   position: absolute;
-  left: 0;
+  left: -580%;
   z-index: 10007;
   background-color: #d8f1ff;
   border-bottom: 3px solid #ff3d00;
