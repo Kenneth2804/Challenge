@@ -62,7 +62,7 @@ const Navbar = ({script}) => {
   
 
     return (
-     <div>
+     <div >
     <header className="header__middle">
          <div className="wknd">
                 
@@ -133,8 +133,9 @@ const Navbar = ({script}) => {
             </div>
 
     </header><br></br>
+    <div>
         <div className='part2' >      
-        <div>
+        <div className='con'> 
         <p className='textone'>Lorem ipsum</p> 
         </div>
         
@@ -208,7 +209,7 @@ const Navbar = ({script}) => {
         
 </div> 
 
- 
+</div>
 
     )
 }
