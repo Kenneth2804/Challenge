@@ -1,12 +1,4 @@
-import React,{useState} from 'react';
-
 import Swiper, {SwiperOptions} from "swiper";
-import p1 from '../sets/profile1.jpg';
-import p2 from '../sets/profile2.jpg';
-import p3 from '../sets/profile3.jpg';
-
-
- 
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -36,14 +28,4 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
-
-const About = () =>{
-
-  return (
-    <div >
-	
-	</div>
-  );
-}
-
-export default About;
+  export default script;

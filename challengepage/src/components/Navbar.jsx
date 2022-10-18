@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { useEffect } from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import imagen from '../sets/Vector.png'
@@ -18,20 +19,16 @@ import star from '../sets/star.png'
 import words from '../sets/words.png'
 import after from '../sets/after.png'
 
-
 import p1 from '../sets/profile1.jpg';
 import p2 from '../sets/profile2.jpg';
 import p3 from '../sets/profile3.jpg';
 import p4 from '../sets/profile4.jpg';
+import About from './About';
 
 
 
 
-const Navbar = () => {
-
-
-
-
+const Navbar = ({script}) => {
 
      
     const [isMenu, setisMenu] = useState(false);
@@ -61,6 +58,8 @@ const Navbar = () => {
         boxClassSubMenu.push('');
     }
 
+     
+  
 
     return (
      <div>
@@ -120,7 +119,7 @@ const Navbar = () => {
         </a><div className='ingresar'>Ingresar</div></div>
                 </ul>
 <div>
-    <img className='vacations' src={texto}></img>
+    <p className='vacations'>Las mejores vacaciones de tu vida</p>
 </div>
 
                     
@@ -136,32 +135,35 @@ const Navbar = () => {
     </header><br></br>
         <div className='part2' >      
         <div>
-        <img   className='textolorem' src={texto2}/> 
+        <p className='textone'>Lorem ipsum</p> 
         </div>
         
         <div>
-        <img   className='textolorem2' src={texto3}/> 
+       <p className='texttwo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna </p>
         </div>
         <div>
-        <img   className='t4derecha' src={texto4}/> 
+        <p className='t4derecha'>Lorem ipsum </p> 
         </div>
         <div>
-        <img   className='t5derecha' src={texto5}/> 
+        <p  className='t5derecha'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p> 
         </div>
         <div>
-        <img   className='t6derecha' src={texto6}/> 
+        <p  className='t6derecha'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna </p> 
         </div>
         <div>
         <img   className='linea' src={linea}/> 
         </div>
-        <div className='rectangle'>
-          <div><img className='slogan' src={slogan}/></div>
+        <div >
+          <div className='rectangle'><p>.</p></div>
+          <div> <img className='waves' src={waves}/></div>
+          <div><p className='slogan'>Ready <br></br>to<br></br> sail</p></div>
           <div><img className='animal' src={animal}/></div>
-          <div><img className='vacations2' src={vacations}/></div>
-        <div><img className='waves' src={waves}/></div>
+          <div><p className='vacations2'>Your vacation is here</p></div>
+
         </div>
 
-        <div>
+       <div >
+       <div><p>.</p></div>
             <img src={bstar} className="bstar"></img>
             <img src={star} className="star"></img>
             <img src={bstar} className="bstar2"></img>
@@ -172,56 +174,194 @@ const Navbar = () => {
             <img src={star} className="star4"></img>
             <img src={bstar} className="bstar5"></img>
             <img src={star} className="star5"></img>
-            <img src={words} className="words"></img>
-            <img src={after} className="after"></img>
+            <p className="words">Tus palabra, no nuestra </p>
+            <p className="after">After 15 years running The Yacht Week, people have a lot to say about us</p></div>
 
+  {/* <div className='containerr'>
+  <div className="card">
+                     
+      <div><img src={p1}/>      <h2>Pablo Martinez</h2>
+      <p>"Lorem ipsum dolor sit amet, conse adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.”</p>
+      </div>
+      
+    </div>
+    </div>  <div className='containerr'>
+  <div className="card">
 
+  <div><img src={p1}/>
+  <h2>Pablo Martinez</h2>
+  <p>"Lorem ipsum dolor sit amet, conse adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.”</p>
+      </div>
+      
+    </div>
+    </div>  <div className='containerr'>
+  <div className="card">
+
+  <div><img src={p1}/>      <h2>Pablo Martinez</h2>
+      <p>"Lorem ipsum dolor sit amet, conse adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.”</p>
+      </div>
+      
+    </div>
+        </div>
+   */}
+ <div class="slide-container swiper">
+ 
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                            <img src={p1} alt="" class="card-img"/>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+            <About/>
+        </div>
+        
 </div> 
-<div className='abajo'>
-<div  id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div   class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-     <div className='border'> <img src={p1} class="d-block w-100" alt="..."/></div>
-      <div >
-        <h5>First slide label</h5>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-    <div className='border'> <img src={p2} class="d-block w-100" alt="..."/></div>
-      <div >
-        <h5>Second slide label</h5>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-    <div className='border'> <img src={p3} class="d-block w-100" alt="..."/></div>
-      <div>
-        <h5>Third slide label</h5>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-        </div>
-        </div>
-
-     
-
 
 </div> 
 
