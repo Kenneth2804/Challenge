@@ -69,7 +69,7 @@ const Navbar = ({script}) => {
                 <p>WKND</p>
          
            </div>
-        <div className="containe">
+        <div className="container">
             <div className="row">
 
                 {/* Add Logo  */}

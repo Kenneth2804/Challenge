@@ -10,14 +10,8 @@ body {
      background-size: 100%;
      background-attachment: fixed;  
 }
-.con{
-  height: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
 
-}
-.containe {
+.container {
   width: 100%;
   height: 100%;
 	padding-right:15px;
@@ -81,7 +75,7 @@ li {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 0px;
+  width: 1533px;
 
 }
 
@@ -203,8 +197,8 @@ text-decoration: none;
    .main-nav .menu-item:hover > a {color: #07a8ff !important}
    .main-nav .menubar__button {
   display: block!important;
-  float: left;
-  left: 450%;
+  float: left;  
+  left: -90%;
   background-color: black;
   color: #fff;
   padding: 6px 7px;
