@@ -53,7 +53,7 @@ li {
   position: relative;
   display: block;
   color: white;
-  margin: 27px 25px;
+  margin: 27px 10px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -528,7 +528,7 @@ h5{
 }
 p{
   color: white;
-}/* 
+}
 .containerr{
 
   text-decoration: none;
@@ -601,13 +601,13 @@ color: #FFFFFF;
      text-decoration: none;
      
  }
- */
+
  /*aaaah*/
  /* Google Fonts - Poppins */
 
 
 
-.slide-container{
+/* .slide-container{
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
@@ -731,3 +731,4 @@ color: #FFFFFF;
     display: none;
   }
 }
+ */
