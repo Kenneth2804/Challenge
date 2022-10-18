@@ -17,7 +17,7 @@ import bstar from '../sets/bstar.png'
 import star from '../sets/star.png'
 import words from '../sets/words.png'
 import after from '../sets/after.png'
-import Dots from './Dots'
+
 
 import p1 from '../sets/profile1.jpg';
 import p2 from '../sets/profile2.jpg';
@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
 
-    
+
      
     const [isMenu, setisMenu] = useState(false);
     const [isResponsiveclose, setResponsiveclose] = useState(false);
@@ -175,12 +175,53 @@ const Navbar = () => {
             <img src={words} className="words"></img>
             <img src={after} className="after"></img>
 
-        </div>
 
+</div> 
+<div className='abajo'>
+<div  id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div   class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+     <div className='border'> <img src={p1} class="d-block w-100" alt="..."/></div>
+      <div >
+        <h5>First slide label</h5>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+    <div className='border'> <img src={p2} class="d-block w-100" alt="..."/></div>
+      <div >
+        <h5>Second slide label</h5>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <div className='border'> <img src={p3} class="d-block w-100" alt="..."/></div>
+      <div>
+        <h5>Third slide label</h5>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.".</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+        </div>
 
      
 
-</div> 
 
 </div> 
 

@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Online from './components/Online';
 import Offline from './components/Offline';
-import Dots from './components/Dots';
+
 
 import Navbar from './components/Navbar';
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/About" component={About}/>
           <Route path="/Online" component={Online}/>
           <Route path="/Offline" component={Offline}/>
-          <Route path="/Dot" component={Dots}/>
+
 
           
         </Routes>
